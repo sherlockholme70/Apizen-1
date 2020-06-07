@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@font-face {
+    font-family: roboto-regular;
+    src: url(assets/fonts/Roboto-Regular.ttf) format("opentype");
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(assets/fonts/Roboto-Bold.ttf) format("opentype");
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(assets/fonts/Roboto-Light.ttf) format("opentype");
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(assets/fonts/Roboto-Thin.ttf) format("opentype");
+}
+@font-face {
+    font-family: roboto-medium;
+    src: url(assets/fonts/Roboto-Medium.ttf) format("opentype");
+}
+@font-face {
+    font-family: roboto-black;
+    src: url(assets/fonts/Roboto-Black.ttf) format("opentype");
+}
+
+.custombody{
+    // margin: 0;
+    // height: inherit;
+    // background: linear-gradient(to right, #373b44, #4286f4);
+    // background: white;
+    // background: linear-gradient(to right, #00b4db, #0083b0);
+    
+    // background: linear-gradient(0deg, rgba(255,255,255,0.298039) 1px, rgba(0,0,0,0) 1px), linear-gradient(90deg, rgba(255,255,255,0.298039) 1px, rgba(0,0,0,0) 1px), radial-gradient(closest-side, #707070 0, #606060 100%);
+    // background-position: -1px -1px, -1px -1px, 50% 50%;
+    // background-origin: padding-box;
+    // background-clip: border-box;
+    // background-size: 15px 15px, 15px 15px, auto auto;
+
+    background-color: #ddd;
+    background-image:
+      linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+      linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+
+body{
+    margin: 0;
+}
+
+*{
+    font-family: roboto-regular;
+}

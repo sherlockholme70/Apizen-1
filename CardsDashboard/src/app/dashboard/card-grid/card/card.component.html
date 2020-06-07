@@ -1,0 +1,12 @@
+<div class="card no-padding">
+  <div class="card-body no-padding">
+    <app-map *ngIf="cardMap"></app-map>
+    <!-- <app-chart [chartBean] *ngIf="cardChart"></app-chart> -->
+    <app-table *ngIf="cardTable"></app-table>
+    <app-notification *ngIf="cardNotification"></app-notification>
+    <app-line-chart  *ngIf="lineChartFlag"></app-line-chart>
+    <app-bar-chart  *ngIf="barChartFlag"></app-bar-chart>
+    <app-pie-chart  *ngIf="pieChartFlag"></app-pie-chart>
+    <app-doughnut-chart *ngIf="doughnutChartFlag"></app-doughnut-chart>
+  </div>
+</div>

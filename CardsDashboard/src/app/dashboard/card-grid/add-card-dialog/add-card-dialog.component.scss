@@ -1,0 +1,24 @@
+.formcontainer{
+    width: 70vw;
+    mat-form-field{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .alignparallel{
+        display: inline-block;
+        width: 49%;
+    }
+    .tripleparallel{
+        display: inline-block;
+        width: 45%;
+    }
+    .imageverticalalign{
+        display: inline-flex;
+        vertical-align: middle;
+    }
+}
+.formbuttons{
+    float: right !important;
+
+}

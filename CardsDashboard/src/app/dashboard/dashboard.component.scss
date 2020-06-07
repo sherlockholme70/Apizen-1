@@ -1,0 +1,28 @@
+.fab-container {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .fab-toggler {
+    float: right;
+    z-index: 100;
+  }
+  
+  .icon{
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .iconbackground{
+    background: #fb502d;
+  }
+  
+  .gridcontainer{
+    //height: inherit;
+    //background: linear-gradient( 135deg, #CE9FFC 10%, #7367F0 100%);
+    
+  }

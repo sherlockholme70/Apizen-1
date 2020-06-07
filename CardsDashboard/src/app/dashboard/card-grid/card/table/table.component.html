@@ -1,0 +1,12 @@
+<table class="table table-borderless mat-elevation-z8">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let tableHeader of table.TableHeaderRow">{{tableHeader}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tableDataRow of table.TableDataRow">
+        <td *ngFor="let tableData of tableDataRow">{{tableData}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,12 @@
+$navigation-bar-bgcolor: #343a40;
+
+$navigation-bar-txtcolor: #FFFFFF;  
+
+.navigationbar{    
+    background: $navigation-bar-bgcolor;
+    color: $navigation-bar-txtcolor;
+    span{
+        font-family: roboto-black;
+    }
+}
+

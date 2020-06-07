@@ -1,0 +1,40 @@
+$errorColor: #e83622;
+$successColor: #27ae61;
+$informationColor: #3598dc;
+$warnColor: #f49c14;
+
+.error{
+    background:linear-gradient(45deg, $errorColor 0%, darken( $errorColor, 10% ) 100%);
+}
+
+.success{
+    background:linear-gradient(45deg, $successColor 0%, darken( $successColor, 10% ) 100%);
+    
+}
+
+.information{
+    background:linear-gradient(45deg, $informationColor 0%, darken( $informationColor, 10% ) 100%);
+}
+
+.warning{
+    background:linear-gradient(45deg, $warnColor 0%, darken( $warnColor, 10% ) 100%);
+}
+
+.notification{
+    height: 8em;
+    width: 8em;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding: 4%;
+    .notificationtitle{
+        font-size: 40px;
+        font-family: roboto-black;
+        border-bottom: 1px groove darken( $informationColor, 2% );
+    }
+    .notificationmessage{
+        font-size: 18px;
+        color: whitesmoke;
+    }
+
+}

@@ -1,0 +1,15 @@
+.map{
+    height: 25em;
+    width: 75vw;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    .mapheader{
+        margin: .6em;
+        font-size: 18px;
+    }
+    .mapbody{
+        width: 100%; 
+        height: 90%;
+    }
+}
