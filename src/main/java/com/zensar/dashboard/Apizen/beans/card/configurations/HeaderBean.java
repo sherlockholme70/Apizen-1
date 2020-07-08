@@ -31,8 +31,7 @@ public class HeaderBean {
 	private String key;
 	@Column(name="header_value")
 	private String value;
-	@Column(name="configuration_id")
-	private String configurationID;
+	
 	
 	
 	public String getId() {
@@ -53,12 +52,11 @@ public class HeaderBean {
 	public void setValue(String value) {
 		this.value = value;
 	}
-	public String getConfigurationID() {
-		return configurationID;
+	@Override
+	public String toString() {
+		return "HeaderBean [id=" + id + ", key=" + key + ", value=" + value + "]";
 	}
-	public void setConfigurationID(String configurationID) {
-		this.configurationID = configurationID;
-	}
+	
 	
 	
 	

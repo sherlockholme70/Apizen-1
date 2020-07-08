@@ -1,0 +1,19 @@
+<h5 mat-dialog-title>Create Dashboard</h5>
+<form [formGroup]="dashboardForm">
+    <ng-template matStepLabel>Enter Dashboard Details</ng-template>
+    <mat-dialog-content>
+    <div class="formcontainer">
+      <mat-form-field>
+        <input matInput formControlName="dashboardName" placeholder="Dashboard Name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="userName" placeholder="User Name">
+      </mat-form-field>
+    </div>
+  </mat-dialog-content>
+    <div class="formbuttons" mat-dialog-actions>
+      <button mat-flat-button color="warn" (click)="closeAddDashboardDialog()">Cancel</button>
+      &nbsp;
+      <button mat-flat-button color="primary" (click)="openCardDesigner()">Submit</button>
+    </div>
+  </form>

@@ -48,8 +48,8 @@ public class CardBean {
 	@JoinColumn(name="component_id")
 	private CardComponentBean cardComponentBean;
 	
-	@Column(name="grid_id")
-	private String gridID;
+	@Column(name="dashboard_id")
+	private String dashbardID;
 	
 	public String getCardID() {
 		return cardID;
@@ -91,13 +91,21 @@ public class CardBean {
 		this.cardComponentBean = cardComponentBean;
 	}
 
-	public String getGridID() {
-		return gridID;
+	public String getDashbardID() {
+		return dashbardID;
 	}
 
-	public void setGridID(String gridID) {
-		this.gridID = gridID;
+	public void setDashbardID(String dashbardID) {
+		this.dashbardID = dashbardID;
 	}
 
+	@Override
+	public String toString() {
+		return "CardBean [cardID=" + cardID + ", cardName=" + cardName + ", position=" + position
+				+ ", cardConfigurationBean=" + cardConfigurationBean + ", cardComponentBean=" + cardComponentBean
+				+ ", dashbardID=" + dashbardID + "]";
+	}
+
+	
 	
 }

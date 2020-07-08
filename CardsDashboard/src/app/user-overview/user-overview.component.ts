@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+
 
 @Component({
   selector: 'app-user-overview',

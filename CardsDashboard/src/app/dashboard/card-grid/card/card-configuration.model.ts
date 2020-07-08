@@ -21,12 +21,10 @@ export class HeaderBean {
     id?: String;
     key?: String;
     value?: String;
-    configurationID: String;
 }
 
 export class QueryParameterBean {
     id?: String;
     key?: String;
     value?: String;
-    configurationID: String;
 }

@@ -49,9 +49,6 @@ export class CardDesignerComponent implements OnInit {
   }
 
   saveComponent(component: String) {
-    const card: CardBean = {
-      gridID: 'grid1234'
-    };
     switch (component) {
       case 'map':
         break;
@@ -61,6 +58,7 @@ export class CardDesignerComponent implements OnInit {
         break;
       case 'notification':
         this.cardBean.cardComponentBean = this.notificationForm.value;
+        console.log('Final bean to save',this.cardBean);
         this.cardDesignerService.saveCard(this.cardBean)
         .subscribe(data => {
           this.router.navigate(['../dashboard'], { relativeTo: this.activatedRoute.parent });

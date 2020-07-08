@@ -111,7 +111,7 @@ export class AddCardDialogComponent implements OnInit {
       type: 'api'
     };
     cardBean = {
-      gridID: null,
+      dashboardID: null,
       cardID: null,
       cardName: this.cardDetailsForm.value.cardName,
       cardPosition: this.cardDetailsForm.value.cardPosition,

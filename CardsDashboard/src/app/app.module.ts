@@ -17,7 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavigationBarComponent } from 'src/app/navigation-bar/navigation-bar.component';
 import { CardSharingService } from './card-sharing.service';
 import { APIResponseProviderService } from './dashboard/card-grid/add-card-dialog/apiresponse-provider.service';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarComponent, CreateDashboardDialogComponent } from './sidebar/sidebar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HttpClientModule } from '@angular/common/http';
 import { LineChartComponent } from './dashboard/card-grid/card/chart/line-chart/line-chart.component';
@@ -46,7 +46,8 @@ import { DashboardService } from './dashboard/dashboard.service';
     DoughnutChartComponent,
     UserOverviewComponent,
     DashboardComponent,
-    CardGridComponent
+    CardGridComponent,
+    CreateDashboardDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +61,7 @@ import { DashboardService } from './dashboard/dashboard.service';
     HttpClientModule
   ],
   providers: [CardSharingService, APIResponseProviderService, CardDesignerService, DashboardService],
-  entryComponents: [AddCardDialogComponent],
+  entryComponents: [AddCardDialogComponent,CreateDashboardDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

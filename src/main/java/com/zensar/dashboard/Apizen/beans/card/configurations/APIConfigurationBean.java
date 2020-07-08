@@ -43,5 +43,11 @@ public class APIConfigurationBean extends CardConfigurationBean{
 	public void setQueryParameters(List<QueryParameterBean> queryParameterBeanMap) {
 		this.queryParameterBeanMap = queryParameterBeanMap;
 	}
+	@Override
+	public String toString() {
+		return "APIConfigurationBean [url=" + url + ", headerBeanMap=" + headerBeanMap + ", queryParameterBeanMap="
+				+ queryParameterBeanMap + "]";
+	}
+	
 	
 }

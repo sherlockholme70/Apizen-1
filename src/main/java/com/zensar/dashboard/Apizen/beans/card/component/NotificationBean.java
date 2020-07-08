@@ -16,8 +16,10 @@ public class NotificationBean extends CardComponentBean{
 		
 	@Column(name="message")
 	private String message;
+	
 	@Column(name="xpath")
 	private String xpath;
+	
 	@OneToMany(cascade=CascadeType.ALL)
 	@JoinColumn(name="component_id")
 	private List<NotificationThresholdConfiguration>  notificationThresholdConfigurations ;
@@ -40,5 +42,11 @@ public class NotificationBean extends CardComponentBean{
 	public void setNotificationThresholdConfigurations(List<NotificationThresholdConfiguration> notificationThresholdConfigurations) {
 		this.notificationThresholdConfigurations = notificationThresholdConfigurations;
 	}
+	@Override
+	public String toString() {
+		return "NotificationBean [message=" + message + ", xpath=" + xpath + ", notificationThresholdConfigurations="
+				+ notificationThresholdConfigurations + "]";
+	}
+	
 	
 }

@@ -62,5 +62,11 @@ public abstract class CardComponentBean {
 	public void setComponentType(String componentType) {
 		this.componentType = componentType;
 	}
+
+	@Override
+	public String toString() {
+		return "CardComponentBean [componentID=" + componentID + ", componentType=" + componentType + "]";
+	}
 		
+	
 }

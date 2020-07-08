@@ -7,7 +7,7 @@ export class CardBean {
     public cardPosition?: number;
     public cardConfigurationBean?: CardConfigurationBean;
     public cardComponentBean?: CardComponentBean;
-    public gridID: String;
+    public dashboardID: String;
 }
 
 

@@ -27,7 +27,8 @@ export class CardGridComponent implements OnInit, AfterViewInit {
       this.activatedRoute.params.subscribe(console.log);
     });
     this.cards = [
-      { gridID: 'grid101',
+      {
+        dashboardID: 'dashboard101',
         cardID: 'card1',
         cardComponentBean: {
           chartType: 'LineChart',
@@ -35,7 +36,7 @@ export class CardGridComponent implements OnInit, AfterViewInit {
         }
       },
       {
-        gridID: 'grid101',
+        dashboardID: 'dashboard101',
         cardID: 'card2',
         cardComponentBean: {
           chartType: 'BarChart',
@@ -43,7 +44,7 @@ export class CardGridComponent implements OnInit, AfterViewInit {
         }
       },
       {
-        gridID: 'grid101',
+        dashboardID: 'dashboard101',
         cardID: 'card3',
         cardComponentBean: {
           chartType: 'PieChart',
@@ -51,7 +52,7 @@ export class CardGridComponent implements OnInit, AfterViewInit {
         }
       },
       {
-        gridID: 'grid101',
+        dashboardID: 'dashboard101',
         cardID: 'card4',
         cardComponentBean: {
           chartType: 'DoughnutChart',
@@ -59,21 +60,21 @@ export class CardGridComponent implements OnInit, AfterViewInit {
         }
       },
       {
-        gridID: 'grid101',
+        dashboardID: 'dashboard101',
         cardID: 'card3',
         cardComponentBean: {
           type: 'table'
         }
       },
       {
-        gridID: 'grid101',
+        dashboardID: 'dashboard101',
         cardID: 'card1',
         cardComponentBean: {
           type: 'notification'
         }
       },
       {
-        gridID: 'grid101',
+        dashboardID: 'dashboard101',
         cardID: 'card3',
         cardComponentBean: {
           type: 'map'

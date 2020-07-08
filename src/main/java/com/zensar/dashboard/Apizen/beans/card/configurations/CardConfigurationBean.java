@@ -57,6 +57,11 @@ public abstract class CardConfigurationBean {
 	public void setThreshold(int threshold) {
 		this.threshold = threshold;
 	}
+
+	@Override
+	public String toString() {
+		return "CardConfigurationBean [configurationID=" + configurationID + ", threshold=" + threshold + "]";
+	}
 	
 	
 	

@@ -1,6 +1,7 @@
 package com.zensar.dashboard.Apizen.beans;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -9,11 +10,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
+import com.zensar.dashboard.Apizen.beans.card.CardBean;
 import com.zensar.dashboard.Apizen.persistence.ApizenSequenceGenerator;
 
 @Entity(name="dashboard_details")
@@ -39,9 +41,9 @@ public class DashboardBean {
 	@Column(name="username")
 	private String username;
 	
-	@OneToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="grid_id",nullable=false)
-	private GridBean gridBean;
+	@OneToMany(cascade=CascadeType.ALL)
+	@JoinColumn(name="dashboard_id")		
+	private List<CardBean> cards;
 	
 	@Column(name="create_date")
 	private Date createDate;
@@ -89,22 +91,20 @@ public class DashboardBean {
 		this.updateDate = updateDate;
 	}
 
-	public GridBean getGridBean() {
-		return gridBean;
+	public List<CardBean> getCards() {
+		return cards;
 	}
 
-	public void setGridBean(GridBean gridBean) {
-		this.gridBean = gridBean;
+	public void setCards(List<CardBean> cards) {
+		this.cards = cards;
 	}
 
 	@Override
 	public String toString() {
 		return "DashboardBean [dashboardID=" + dashboardID + ", dashboardName=" + dashboardName + ", username="
-				+ username + ", gridBean=" + gridBean + ", createDate=" + createDate + ", updateDate=" + updateDate
-				+ "]";
+				+ username + ", cards=" + cards + ", createDate=" + createDate + ", updateDate=" + updateDate + "]";
 	}
 
-	
 	
 	
 }

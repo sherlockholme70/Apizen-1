@@ -70,4 +70,12 @@ public class NotificationThresholdConfiguration {
 		this.colorCode = colorCode;
 	}
 
+	@Override
+	public String toString() {
+		return "NotificationThresholdConfiguration [notificationThresholdConfigurationID="
+				+ notificationThresholdConfigurationID + ", operator=" + operator + ", value=" + value + ", colorCode="
+				+ colorCode + "]";
+	}
+
+	
 }
