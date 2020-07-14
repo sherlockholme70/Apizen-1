@@ -28,9 +28,11 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.min.js"
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -137,5 +139,8 @@
       }
     }
   },
-  "defaultProject": "CardsDashboard"
+  "defaultProject": "CardsDashboard",
+  "cli": {
+    "analytics": "4157423a-44c5-43fa-894b-06ff1794e6a9"
+  }
 }

@@ -1,0 +1,16 @@
+<div class="chartContainer mat-elevation-z4">
+  <div class="chartPadding">
+    <ngx-charts-pie-chart
+    [legend]="doughnutChartBean.legend"
+    [legendTitle]="doughnutChartBean.legendTitle"
+    [legendPosition]="doughnutChartBean.legendPosition"
+    [labels]= "doughnutChartBean.labels"
+    [explodeSlices]="doughnutChartBean.explodeSlices"
+    [gradient]="doughnutChartBean.gradient"
+    [results]="doughnutChartBean.results"
+    [doughnut]="doughnutChartBean.doughnut"
+    [scheme]="colorScheme"
+    (select)="onSelect($event)">
+    </ngx-charts-pie-chart>
+  </div>
+</div>

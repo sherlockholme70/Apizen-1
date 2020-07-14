@@ -1,0 +1,27 @@
+.card-designer{
+    //padding: 1em .5em;
+    padding-top: 1em; 
+    padding-bottom: .5em; 
+    padding-left: 1em;
+    padding-right: .2em;
+
+    .tree-container{
+        background: white;
+        border-radius: 4px;
+    }
+    .designer-container{
+    }
+    
+    .headers-align .mat-expansion-panel-header-description {
+        justify-content: flex-end;
+        align-items: center;
+        .mat-expansion-panel-header-title, .example-headers-align {
+            flex-basis: 0;
+        }    
+    }
+}
+
+.imageverticalalign{
+    display: inline-block;
+    vertical-align: middle;
+}

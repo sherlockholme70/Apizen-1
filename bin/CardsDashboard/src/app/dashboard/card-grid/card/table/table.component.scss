@@ -1,0 +1,26 @@
+table {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none;
+  background: white;
+  font-size: 14px;    
+  thead{
+    tr{
+      border-bottom: 1px solid lightgrey;
+      th{
+        text-align: left;
+        font-weight: normal;
+        color: grey;
+      }
+    }
+  }
+  tbody{
+    tr{
+      border-bottom: 1px solid lightgrey;
+      th{
+        font-weight: normal;
+      }
+    }
+  }
+}
+

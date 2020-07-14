@@ -1,0 +1,37 @@
+.sidenav-container {
+  height: 100%;
+  background: #757575 !important;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+$navigation-bar-bgcolor: #343a40;
+
+$navigation-bar-txtcolor: #FFFFFF;  
+
+.navigationbar{    
+    background: $navigation-bar-bgcolor !important;
+    color: $navigation-bar-txtcolor !important;
+    span{
+        font-family: roboto-black;
+    }
+}
+
+.space{
+  flex: 1 auto;
+}
+.side{
+  float:right;
+}
